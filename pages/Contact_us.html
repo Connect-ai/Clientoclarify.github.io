@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Clientoclarify.ai</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/Contact.css" />
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Owl Carousel -->
+		<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+		<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+		<!-- Magnific Popup -->
+		<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="main-navbar" class="navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a class="logo" href="index.html"><img src="../img/logo/Client.png" alt="logo"></a>
+					</div>
+					<!-- Logo -->
+
+					<!-- Mobile toggle -->
+					<button class="navbar-toggle-btn">
+						<span></span>
+					</button>
+					<!-- Mobile toggle -->
+
+					<!-- Mobile Search toggle -->
+					<button class="search-toggle-btn">
+						<i class="fa fa-search"></i>
+					</button>
+					<!-- Mobile Search toggle -->
+				</div>
+
+				<!-- Search -->
+				<div class="navbar-search">
+					<button class="search-btn"><i class="fa fa-search"></i></button>
+					<div class="search-form">
+						<form>
+							<input type="text" name="search" value="" placeholder="Search">
+						</form>
+					</div>
+				</div>
+				<!-- Search -->
+
+				<!-- Navigation -->
+				<ul class="main-navbar nav navbar-nav navbar-right">
+					<li ><a class="text-link" href="../index.html"><span>Home</span></a>
+					</li>
+					<li><a class="text-link" href="#"><span>About</span></a></li>
+					<!-- <li class="has-dropdown"><a class="text-link" href="#"><span>Projects</span></a>
+						<ul class="dropdown">
+							<li><a href="#">Single Project</a></li>
+							<li><a href="#">Project Detail</a></li>
+						</ul>
+					</li> -->
+					<li class="has-dropdown"><a class="text-link" href="#"><span>Services</span></a>
+						<ul class="dropdown">
+							<li><a href="#">AI AS A SERVICE</a></li>
+							<li><a href="#">DATA AS A SERVICE</a></li>
+							<li><a href="#">INTERNET OF THINGS</a></li>
+							<li><a href="#">ANALYTICS AND INSIGHTS</a></li>
+							<li><a href="#">MARKITING</a></li>
+							<li><a href="#">CONSULTING</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown"><a class="text-link" href="#"><span>Blog</span></a>
+						<ul class="dropdown">
+							<li><a href="#">Blog page</a></li>
+							<li><a href="#">Blog post page</a></li>
+						</ul>
+					</li>
+					<li><a class="text-link" href="pages/Contact_us.html"><span>Contact</span></a></li>
+				</ul>
+				<!-- Navigation -->
+
+			</div>
+		</div>
+
+		<form id="regForm" action="/action_page.php">
+		  <h1>Register:</h1>
+		  <!-- One "tab" for each step in the form: -->
+		  <div class="tab">Name:
+			<p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+			<p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+		  </div>
+		  <div class="tab">Contact Info:
+			<p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+			<p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+		  </div>
+		  <div class="tab">Birthday:
+			<p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+			<p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+			<p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+		  </div>
+		  <div class="tab">Login Info:
+			<p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+			<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+		  </div>
+		  <div style="overflow:auto;">
+			<div style="float:right;">
+			  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+			  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			</div>
+		  </div>
+		  <!-- Circles which indicates the steps of the form: -->
+		  <div style="text-align:center;margin-top:40px;">
+			<span class="step"></span>
+			<span class="step"></span>
+			<span class="step"></span>
+			<span class="step"></span>
+		  </div>
+		</form>
+
+
+		<script type="text/javascript" src="js/Contact.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
