@@ -1,43 +1,10 @@
 /*
 Author: Reddy Prasad
 
-Colors:
-	Body 		: #64728A
-	Headers 	: #004
-	Primary 	: #FFD626
-	Dark     	: #001232
-	Grey 		: #F8F8F8 #EEE
-
-Fonts: Poppins
-
-Table OF Contents
-------------------------------------
-1 > General
-2 > Logo
-3 > Navigation
-4 > Home
-5 > About
-6 > Numbers
-7 > Portfolio
-8 > Services
-9 > Pricing
-10 > Testimonial
-11 > Partners
-12 > Blog
-13 > Blog post
-14 > Blog sidebar
-15 > Footer
-16 > Responsive
-17 > Accordion
-18 > Owl theme
-19 > Preloader
-------------------------------------*/
-/*------------------------------------*\
-	General
 \*------------------------------------*/
 /* --- typography --- */
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Comfortaa';
 	font-size: 16px;
 	line-height: 24px;
 	color: #64728A;
@@ -114,7 +81,10 @@ ul,ol{
 /* --- Background Section --- */
 
 .bg-main {
-	background-color: #FFD626;
+	background: #00b09b;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .bg-grey {
@@ -123,6 +93,15 @@ ul,ol{
 
 .bg-dark {
 	background-color: #001232;
+}
+.bg-linear {
+	background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+}
+.bg-rainbow{
+	background: #00F260;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* --- Background Image Section --- */
@@ -224,6 +203,30 @@ ul,ol{
 .secondary-button {
 	background-color: #FFD626;
 	color: #004;
+}
+
+.third-button{
+	
+         .btn-grad {background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
 }
 
 .main-button:after  , .secondary-button:after {
@@ -686,13 +689,14 @@ textarea {
 
 .banner-area {
 	position: relative;
+	overflow:hidden
 }
 
 #home .home-wrapper {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -1215,11 +1219,11 @@ textarea {
 
 /* -- footer contact -- */
 .footer-contact li a {
-	color: #64728A;
+	color: #fff6f6;
 }
 
 .footer-contact li a i {
-	color: #FFD626;
+	
 	margin-right: 15px;
 }
 
@@ -1231,7 +1235,7 @@ textarea {
 .footer-links li a {
 	display: inline-block;
 	font-size: 14px;
-	color: #64728A;
+	color: #fff6f6;
 	-webkit-transition: 0.2s color, 0.2s -webkit-transform;
 	transition: 0.2s color, 0.2s -webkit-transform;
 	transition: 0.2s transform, 0.2s color;
@@ -1608,3 +1612,156 @@ textarea {
 		        transform: scale(0);
 	}
 }
+
+.flash-messages {
+   display: grid;
+   padding: 1rem;
+   margin: 0 auto;
+   max-width: 800px;
+   grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+   grid-gap: 3rem;
+}
+
+.flash-message {
+   position: relative;
+   padding: 2rem;
+
+   text-align: center;
+
+   background-color: white;
+   border-top-right-radius: 0.5rem;
+   border-bottom-right-radius: 1rem;
+   border-bottom-left-radius: 0.5rem;
+   border-top-left-radius: 1rem;
+   box-shadow: $box-shadow;
+   
+   article {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+   }
+}
+
+.flash-message__header {
+   margin-top: auto;
+}
+
+.flash-message__image {
+   width: 100%;
+   height: auto;
+   margin-bottom: 2rem;
+   
+   border-radius: 999px;
+}
+
+.flash-message__paragraph {
+   margin-top: 0;
+}
+
+.flash-message__close {
+   position: absolute;
+   right: 2rem;
+   bottom: -1.5rem;
+   width: 5em;
+   height: 3rem;
+   
+   color: white;
+   font-weight: 700;
+   font-family: 'Montserrat';
+
+   border-width: 0;
+   border-radius: 999px;
+   box-shadow: $box-shadow;
+   background-color: #24146f;
+}
+
+/* Slider Start */
+.slidercontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 4px 16px;
+  
+}
+
+#cards-container {
+  overflow: hidden;
+  margin: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 99999px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 235px;
+  margin: 15px 7.5px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card .img {
+  max-width: 220px;
+  height: 220px;
+  display: inline-block;
+}
+
+#slide-left-container,
+#slide-right-container {
+  display: none;
+}
+
+#slide-left-container.active,
+#slide-right-container.active {
+  display: block;
+  cursor: pointer;
+}
+
+.slide-left,
+.slide-right {
+  background: rgb(34,193,195);
+  border-style: solid;
+  height: 20px;
+  width: 20px;
+  margin-top: 30%;
+}
+
+.slide-left {
+  border-width: 4px 0 0 4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: 40%;
+}
+
+.slide-right {
+  border-width: 4px 4px 0 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 22%;
+}
+
+/* Slider End */
+
+
+/* Services Start */
+
+/* Services End */
