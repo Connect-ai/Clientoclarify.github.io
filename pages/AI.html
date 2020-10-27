@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+	  <meta charset="UTF-8">
+	  <title>ClientoClarify.Ai</title>
+	  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inconsolata'>
+	  <link rel="stylesheet" href="css/ai_style.css">
+
+	</head>
+	<body>
+		<!-- partial:index.partial.html -->
+		<div class="header">
+		  <div class="header__title">ClientoClarify.Ai</div>
+		  <div class="header__tagline">Bird Species Classification</div>
+		</div>
+
+		<div class="container">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500" preserveAspectRatio="xMinYMin" class="birds">
+				<rect onclick="goTo(0)" class="box" x="45" y="15" width="30" height="30"></rect>
+				<circle cx="60" cy="30" r="5"></circle>
+				<rect onclick="goTo(1)" class="box" x="75" y="15" width="30" height="30"></rect>
+				<circle cx="90" cy="30" r="5"></circle>
+				<rect onclick="goTo(2)" class="box" x="105" y="15" width="30" height="30"></rect>
+				<circle cx="120" cy="30" r="5"></circle>
+				<rect onclick="goTo(3)" class="box" x="135" y="15" width="30" height="30"></rect>
+				<circle cx="150" cy="30" r="5"></circle>
+				<rect onclick="goTo(4)" class="box" x="165" y="15" width="30" height="30"></rect>
+				<circle cx="180" cy="30" r="5"></circle>
+			</svg>
+			<div class="bird-text">
+				<div class="bird-text__title"></div>
+				<div class="bird-text__body"></div>
+			</div>
+		</div>	
+		<div class='container'>
+			<a href="">
+				<button class="button">Try Me</button>
+			</a>
+		</div>
+
+
+
+
+
+	</body>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
+	<script  src="js/ai_script.js"></script>
+</html>
