@@ -1,0 +1,127 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+
+
+/* Accordion controls 
+========================================================================== */
+.control{
+  background-color: blue;
+  border-radius: 6px;
+  padding: 5px 10px;
+  border-style: none;
+  font-family: arial;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  margin: 10px;
+
+}
+
+.control:hover{
+  cursor: pointer;
+  color: #e8e8e8;
+}
+
+.control:active{
+  color: #000000;
+  padding: 4px 9px;
+  font-size: .95em;
+}
+
+/* Main accordion container 
+========================================================================== */
+.accordion {
+  background-color: #e3e3e3;
+  width: 90%;
+  margin: 10px auto 0;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.accordion:hover{
+  cursor: pointer;
+}
+
+/* Main accordion title 
+========================================================================== */
+.accordion h3{
+  display: inline;
+  font-weight: 100;
+}
+
+/* Main accordion arrow 
+========================================================================== */
+.accordion button{
+  float: right;
+  font-size: 8px;
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  outline: none;
+}
+
+
+/* Accordion dropdown panel
+========================================================================== */
+.accordion-panel{
+  margin: 0 auto;
+  padding: 10px 15px;
+  min-width: 80%;
+  max-width: 85%;
+  border-width: 2px;
+  background-color: #fafafad4;
+  border-color: #e3e3e3;
+  border-style: solid;
+  border-top: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+/* Rotate class for dropdown button
+========================================================================== */
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.up {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+
+.btn {
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1.42857143;
+  padding: 8px 16px;
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #2D74B7;
+  border-color: #2867a3;
+  border-radius: 8px;
+  font-size: 16px;
+}
